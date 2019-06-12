@@ -1,26 +1,33 @@
+@font-face {
+    font-family: 'mr_ozhandicraft_btgroman';
+    src: url('15435-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 body{
     margin: 0;
-    text-align: center;
     font-size: 18px;
 }
+.wrapper{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0px, 15px;    
+}
 header{
-    height: 100px;
-    width: 1024px;
     background: linear-gradient(rgb(192, 147, 154), rgb(238, 149, 223));
-    border: 1px solid #545454; 
-    display: inline-block;   
+    border: 1px solid #545454;    
 }
 .logo {
-    width: 100px;
+    height: 100px;
     padding: 3px 20px;
     padding-bottom: 5px;
 }
 .logo1{
-    width: 250px;
+    height: 100px;
     padding-left: 80px;
 }
 .logo3{
-    width: 250px;
+    height: 100px;
 }
 .phone{
     float: right;
@@ -30,13 +37,13 @@ header{
     font-size: 26px;
 }
 .gorizontal{
-    width: 1024px;
     height: 70px;
     line-height: 30px;
     background-image: url(img/fon.jpg);
     border: 1px solid #545454;  
     margin: 0 auto;
-    margin-bottom: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 .gorizontal li{
     float: left;
@@ -46,17 +53,17 @@ header{
     width: 23%;
     font-size: 22px;
     border-radius: 50px / 100px;
+    text-align: center;
 }
 .gorizontal ul li:hover{
     background-color: gray;
 }
-.vertical{
+aside{
     width: 200px;
-    margin-top: 1px;
+    margin-right: 10px;
     border: 1px solid #545454;  
     background-image: url(img/fon.jpg);
     float: left;
-    margin: 5px;
 }
 .vertical li{
     width: 110px;
@@ -69,10 +76,12 @@ header{
 .vertical ul li:hover{
     background-color: gray;
 }
-ul{
-    padding-left: 37px;
+.vertical ul::after {
+    content: '';
+    display: block;
+    clear: both;
 }
-.main{
+/*.content{
     width: 1024px;
     display: block;
     overflow: auto;
@@ -80,7 +89,7 @@ ul{
     background: pink;
     border: 1px solid #545454;  
     margin: 0 auto;
-}
+} */
 a{
     text-decoration: none;
     color: palevioletred;
@@ -104,11 +113,11 @@ a{
     padding-right: 7px; 
 }
 .content{
-    width: calc(100%-200px);
     margin-left: 203px;
+    background: pink;
+    border: 1px solid #545454;  
     text-align: justify;
-    margin-top: 2px;
-    padding-right: 7px;
+    padding: 7px;
 }
 p{
     text-indent: 25px;
@@ -116,15 +125,16 @@ p{
 }
 h2{
     text-align: center;
+    font-family: 'mr_ozhandicraft_btgroman';
+    font-size: 46px;
+    margin: 0;
 }
 footer{
-    height: 40px;
-    width: 1024px;
     background: linear-gradient(rgb(192, 147, 154), rgb(238, 149, 223));
     border: 1px solid #545454; 
     margin: 0 auto;
     margin-top: 2px;
     color: green;
-    font-size: 18px;
-    line-height: 40px;  
+    padding: 15px 0;
+    text-align: center;
 }
